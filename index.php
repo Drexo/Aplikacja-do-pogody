@@ -44,7 +44,6 @@
                url:"weather.php",
                success:function(data)
                {
-                   alert('Get Success');
                    console.log(data);
                   $('.town_name').html(data['name']);
                   $('.weather').html(data['weather'][0]['description']);
